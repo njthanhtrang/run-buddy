@@ -1,0 +1,43 @@
+/* Removes default browser-enforced styles */
+* {
+    margin:0;
+    padding: 0;
+}
+body {
+    /* I'm a CSS comment! */
+    color: #39a6b2
+    font-family: Helvetica, Arial, sans-serif;
+  }
+/* apply styles to <header> */  
+header {
+    padding: 20px 35px;
+    background-color: hsl(186, 51%, 46%);
+}
+/* removes <header> width by moving <nav> on the right, UP */  
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #fce138;
+    margin: 0;
+    display: inline;
+}
+/* makes header yellow */
+header a {
+    text-decoration: none;
+    color: #fce138;
+}
+/* brings menu to the right */
+header nav {
+    float: right;
+    margin: 7px 0;
+}
+/* override default block element, makes horizontal */
+header nav ul li {
+    display: inline;
+}
+/* enlarges and applies margin to L&R of each menu item */
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+}
