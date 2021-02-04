@@ -216,8 +216,8 @@ section {
     height: 400px;
 }
 /* overwrote default display property for div from block to inline-block */
- /* inline-block allows us to assign width */
- /* vertical-align  */
+ /* 2 columns-- inline-block allows us to assign container width */
+ /* vertical-align moves content to top */
 .contact-info div {
     width: 410px;
     display: inline-block;
