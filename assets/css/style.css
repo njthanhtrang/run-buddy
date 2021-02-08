@@ -10,26 +10,28 @@ body {
     font-family: Helvetica: Arial, sans-serif;
   }
 /* apply styles to <header> */  
+/* added flexbox display: flex */
 header {
     padding: 20px 35px;
     background-color: hsl(186, 51%, 46%);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-/* removes <header> width by moving <nav> on the right, UP */  
+/* display: inline removes <header> width by moving <nav> on the right, UP */  
 header h1 {
     font-weight: bold;
+    margin: 0;
     font-size: 36px;
     color: #fce138;
-    margin: 0;
-    display: inline;
 }
 /* makes header yellow */
 header a {
     text-decoration: none;
     color: #fce138;
 }
-/* brings menu to the right */
+
 header nav {
-    float: right;
     margin: 7px 0;
 }
 /* override default block element, makes horizontal */
