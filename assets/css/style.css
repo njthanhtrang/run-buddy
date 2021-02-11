@@ -11,9 +11,10 @@
     padding: 0;
 }
 body {
-    color: var(--secondary-color)
-    font-family: Helvetica: Arial, sans-serif;
+    color: var(--tertiary-color);
+    font-family: Helvetica, Arial, sans-serif;
 }
+
 /* HEADER/NAV BAR STYLES START */  
 /* added flexbox display: flex */
 /* top sticks header to top */
@@ -22,7 +23,7 @@ body {
 /* higher z-index brings element to front */
 header {
     padding: 20px 35px;
-    background-color: hsl(186, 51%, 46%);
+    background-color: var(--tertiary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -135,7 +136,7 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .hero-form button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--tertiary-color);
 }
 .hero-form h3 {
     font-size: 24px;
@@ -157,9 +158,20 @@ section {
     background-color: rgba(255,255,255,0.75);
 }
 /* outline:none removes extra blue border */
-.form-input:focus{
+.form-input:focus {
     background-color: rgba(255,255,255,1);
     outline: none;
+}
+.hero-form label {
+    margin: 0 5px;
+}
+.hero-form button {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
 }
 /* opacity is like alpha value in rgba() */
 /* hides input button */
@@ -198,7 +210,7 @@ section {
     position: absolute;
     left: -29px;
     top: -3px;
-    background-image: radial-gradient(circle, var(--secondary-color), var(--secondary-color));
+    background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
 }
 /* colored circle for radio buttons+L shaped thing for checkbox */
 .checkbox-wrapper label::after {
@@ -221,17 +233,6 @@ section {
 .checkbox-wrapper input:checked + label::after, .radio-wrapper input:checked + label::after {
     content: "";
 }
-.hero-form label {
-    margin: 0 5px;
-}
-.hero-form button {
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 10px;
-}
 /* HERO STYLES END */
 /* SECTION TITLE STYLES START */
 /* font-size 48px big enough for all screens, 55px cramped on mobile */
@@ -248,7 +249,7 @@ section {
     border-color: var(--primary-color);
 }
 .secondary-border {
-    border-color: var(--secondary-color);
+    border-color: var(--tertiary-color);
 }
 /* SECTION TITLE STYLES END */
 /* WHAT WE DO STYLES */
@@ -271,7 +272,6 @@ section {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid var(--secondary-color);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -303,7 +303,7 @@ section {
     flex: 12;
 }
 .step-text p {
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
     font-size: 18px;
 }
 .step-text h4 {
@@ -410,7 +410,7 @@ section {
 }
 .contact-form button:hover {
     color: var(--primary-color);
-    background: var(--secondary-color);
+    background: var(--tertiary-color);
 }
 .contact-info a {
     color: var(--primary-color);
